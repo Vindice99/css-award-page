@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001e4d;
+}
+
+.app {
+    background: #fff;
+    border: #001e4d;
+    width: 100%;
+    max-width: 650px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 50px;
+}
+span {
+    display: flex;
+    align-items: center; /* Vertically centers the button and h1 */
+    justify-content: space-between; /* Distributes space between elements */
+}
+
+.app h1{
+    font-size:  25px;
+    color: #001e4d;
+    font-weight: 600px;
+   
+    margin: 0; 
+}
+#leader-board-btn {
+    background: #001e4d;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 2px; /* Optional to add space between button and h1 */
+}
+
+
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background: #222;
+    color: #fff;
+}
+
+#answer-button{
+    text-align: center;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: white;
+    font-weight: 50px;
+    width: 150px;
+    border: 0px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
