@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a<br><span>Random PassWord</span></h1>
+        <div class="display">
+            <input type="password" id="password" placeholder="Password">
+            <!--Put in another div so we can put it next close to each other-->
+            <div class="controls"> 
+                <img src="./images/hide.png" alt="" id="show" onclick="showPassword()">
+                <img src="./images/copy.png" alt="" onclick="copyPassword()">
+            </div>
+        </div>
+        <button onclick="CreatePassword()"><img src="images/generate.png" alt="">Generate Password</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
