@@ -43,7 +43,8 @@ nav{
     width: 220px;
     border-radius: 50%;
     border: 6px solid #fff;
-    box-shadow: 0 10px 60px rgba(255,26,26,0.22)
+    box-shadow: 0 10px 60px rgba(255,26,26,0.22);
+    transition: transform 0.5s;
 }
 
 .music-player h1{
@@ -103,4 +104,21 @@ nav{
 
 .control div:hover {
     background: bisque;
+}
+
+.circle:hover{
+    background: gray;
+}
+
+.spinning {
+    animation: spin 5s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

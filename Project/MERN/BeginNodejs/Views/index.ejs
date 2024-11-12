@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Events</title>
+</head>
+<body>
+  <h2>All Events</h2>
+  <div>
+    <% if (events.length > 0) { %>
+      <% events.forEach(event => { %>
+        <div>
+          <h3><%= event.title %></h3>
+          <p><%= event.description %></p>
+          <p><strong>Date:</strong> <%= event.date.toDateString() %></p>
+          <p><strong>Publisher:</strong> <%= event.publisher %></p>
+          <p><strong>Price:</strong> $<%= event.price %></p>
+          <p><strong>Origin:</strong> <%= event.origin %></p>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No events available at the moment.</p>
+    <% } %>
+  </div>
+</body>
+</html>

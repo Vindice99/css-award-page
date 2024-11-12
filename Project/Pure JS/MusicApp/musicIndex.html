@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styleMusicApp.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/fa89dd4b41.js" crossorigin="anonymous"></script>
@@ -10,35 +10,35 @@
 <body>
     <div class="container">
         <div class="music-player">
-                <nav>
-                    <div class="circle">
-                        <i class="fa-solid fa-angles-left"></i>
-                    </div>
-                    <div class="circle">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div class="circle">
-                        <i class="fa-solid fa-angles-right"></i>
-                    </div>
-                </nav>
-                <img src="./Asset/468-thumbnail.png" alt="" class="song-img">
-                <h1>Despacito</h1>
-                <p>Luis Fonsi Ft. Pueto Rican</p>
-                <audio  id="song">
-                    <source src="./Asset/Go! - NEFFEX.mp3" type="audio/mpeg">
-                </audio>
-                <input type="range" value="0" id="progress">
-                <div class="control" >
-                    <div>
-                        <i class="fa-solid fa-backward" ></i>
-                    </div>
-                    <div onclick="playPause()">
-                        <i class="fa-solid fa-play" id="controlIcon"  ></i>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-forward"></i>
-                    </div>
+            <nav>
+                <div class="circle" onclick="decreseVolume()">
+                    <i class="fa-solid fa-volume-low"></i>
                 </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="circle" onclick="increaseVolume()">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+            </nav>
+            <img id="songThumbnail" src="./thumbnail/468-thumbnail.png" alt="" class="song-img">
+            <h1 id="songTitle">Despacito</h1>
+            <p id="songArtist">Luis Fonsi Ft. Puerto Rican</p>
+            <audio id="song">
+                <source id="audioSource" src="./music/Go! - NEFFEX.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="control">
+                <div onclick="playPrevious()">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="controlIcon"></i>
+                </div>
+                <div onclick="playNext()">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./scriptMusicApp.js"></script>

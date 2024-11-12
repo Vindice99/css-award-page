@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cursive', serif; /* Customize the font */
+    color: #a52a2a; /* Dark red */
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #a52a2a; /* Matching dark red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8b0000;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+a {
+    color: #a52a2a;
+    text-decoration: none;
+}
